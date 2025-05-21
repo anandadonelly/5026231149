@@ -26,3 +26,43 @@ Route::get('halo', function () {
 Route::get('blog', function () {
 	return view('blog');
 });
+
+Route::get('first', function () {
+	return view('tutor1');
+});
+
+Route::get('css_1', function () {
+	return view('Tutorial');
+});
+
+Route::get('css_2', function () {
+	return view('colorchange');
+});
+
+Route::get('bootstrap', function () {
+	return view('Template');
+});
+
+Route::get('soal', function () {
+	return view('Soal6');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('javascript', function () {
+	return view('latihanjs1');
+});
+
+Route::get('danantara', function () {
+	return view('danantara');
+});
+
+Route::get('nintendo', function () {
+	return view('index');
+});
+
+Route::get('portofolio', function () {
+	return view('frontend');
+});

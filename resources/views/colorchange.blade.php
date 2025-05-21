@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: azure;
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+
+</body>
+</html>
+
+
