@@ -1,10 +1,12 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\ProcessorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +29,9 @@ Route::get('halo', function () {
 	return " <h1>Halo, Selamat datang di tutorial laravel www.malasngoding.com</h1>";
 });
 
-Route::get('blog', function () {
-	return view('blog');
-});
+// Route::get('blog', function () {
+// 	return view('blog');
+// });
 
 Route::get('first', function () {
 	return view('tutor1');
@@ -88,3 +90,11 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
+
+
+Route::get('/processor', [ProcessorController::class, 'index']);
+Route::get('/processor/tambah', [ProcessorController::class, 'tambah']);
+Route::post('/processor/store', [ProcessorController::class, 'store']);
+Route::get('/processor/edit/{id}', [ProcessorController::class, 'edit']);
+Route::post('/processor/update', [ProcessorController::class, 'update']);
+Route::get('/processor/hapus/{id}', [ProcessorController::class, 'hapus']);
