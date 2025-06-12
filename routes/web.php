@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\ProcessorController;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -98,3 +99,16 @@ Route::post('/processor/store', [ProcessorController::class, 'store']);
 Route::get('/processor/edit/{id}', [ProcessorController::class, 'edit']);
 Route::post('/processor/update', [ProcessorController::class, 'update']);
 Route::get('/processor/hapus/{id}', [ProcessorController::class, 'hapus']);
+
+// ROUTE BARU UNTUK TUGAS KARYAWAN
+// Route untuk menampilkan halaman utama karyawan
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+
+// Route untuk menampilkan form tambah data
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+
+// Route untuk menyimpan data baru dari form
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+
+// Route untuk menghapus data karyawan
+Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapus']);

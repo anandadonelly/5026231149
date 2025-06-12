@@ -108,7 +108,7 @@
      {{-- Banner Container (Parent Relatif) --}}
      <div class="banner-container">
         {{-- Gambar Banner --}}
-        <img src="{{ asset('bannersikar.png') }}" alt="Banner Image">
+        <img src="{{ asset('bannercpu.jpg') }}" alt="Banner Image">
 
         {{-- Navigation Bar (sekarang berada di dalam banner-container dan akan bertumpuk) --}}
         <nav class="navbar navbar-expand-sm">
@@ -121,19 +121,37 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/portofolio"><i class="fas fa-address-card"></i> Portofolio</a>
+                            <a class="nav-link" href="/"><i class="fas fa-home"></i> Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pegawai"><i class="fas fa-users"></i> Pegawai</a>
+                            <a class="nav-link" href="/processor"><i class="fas fa-microchip"></i> Processor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/processor"><i class="fas fa-database"></i> Tugas CRUD</a>
+                            <a class="nav-link" href="/dosen"><i class="fas fa-chalkboard-teacher"></i> Dosen</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/karyawan"><i class="fas fa-pencil-alt"></i> Latihan 1</a>
+                            <a class="nav-link" href="/blog"><i class="fas fa-blog"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/latihan2"><i class="fas fa-clipboard-list"></i> Latihan 2</a>
+                            <a class="nav-link" href="/formulir"><i class="fas fa-file-alt"></i> Formulir</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLatihan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-code"></i> Latihan
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownLatihan">
+                                <a class="dropdown-item" href="/linktree">Linktree</a>
+                                <a class="dropdown-item" href="/javascript">Javascript</a>
+                                <a class="dropdown-item" href="/danantara">Danantara</a>
+                                <a class="dropdown-item" href="/nintendo">Nintendo</a>
+                                <a class="dropdown-item" href="/portofolio">Portofolio</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/soal">Soal 6</a>
+                                <a class="dropdown-item" href="/first">Tutorial Pertama</a>
+                                <a class="dropdown-item" href="/css_1">Tutorial CSS 1</a>
+                                <a class="dropdown-item" href="/css_2">Tutorial CSS 2</a>
+                                <a class="dropdown-item" href="/bootstrap">Tutorial Bootstrap</a>
+                            </div>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
