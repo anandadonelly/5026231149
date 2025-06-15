@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\CountController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
@@ -112,3 +112,5 @@ Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 
 // Route untuk menghapus data karyawan
 Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapus']);
+
+Route::get('/counter', [CountController::class, 'index']);

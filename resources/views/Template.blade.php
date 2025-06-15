@@ -130,10 +130,13 @@
                             <a class="nav-link" href="/processor"><i class="fas fa-database"></i> Tugas CRUD</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/karyawan"><i class="fas fa-pencil-alt"></i> Latihan 1</a>
+                            <a class="nav-link" href="/counter"><i class="fas fa-pencil-alt"></i> Latihan 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/latihan2"><i class="fas fa-clipboard-list"></i> Latihan 2</a>
+                            <a class="nav-link" href="/karyawan"><i class="fas fa-clipboard-list"></i> Latihan 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/karyawan"><i class="fas fa-clipboard-list"></i> Latihan 3</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
