@@ -138,6 +138,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/karyawan"><i class="fas fa-clipboard-list"></i> Latihan 3</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/eas"><i class="fas fa-clipboard-list"></i> EAS</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                     </ul>

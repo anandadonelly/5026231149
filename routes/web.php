@@ -8,6 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\ProcessorController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\NewKaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -114,3 +115,17 @@ Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapus']);
 
 Route::get('/counter', [CountController::class, 'index']);
+
+
+//NewKaryawan EAS
+Route::get('/eas', [NewKaryawanController::class, 'index']);
+
+// Route untuk menampilkan form tambah data
+Route::get('/eas/tambah', [NewKaryawanController::class, 'tambah']);
+
+// Route untuk menyimpan data baru dari form
+Route::post('/eas/store', [NewKaryawanController::class, 'store']);
+
+// Route untuk menghapus data karyawan
+Route::get('/eas/hapus/{id}', [NewKaryawanController::class, 'hapus']);
+
